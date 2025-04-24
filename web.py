@@ -1,9 +1,9 @@
 import streamlit as st
 import functions as f
 
-st.title("Welcome to the Streamlit App")
+# st.title("")
 st.subheader("ToDo Application")
-st.write("This is a simple ToDo application built with Streamlit.")
+st.write('<p style="color: yellow;">This is a simple ToDo application built with Streamlit.</p>', unsafe_allow_html=True)
 todo_list = f.get_todos()
 
 for i, todo in enumerate(todo_list):
